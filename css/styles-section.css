@@ -1,0 +1,252 @@
+/*===============================================*/
+/*              SECTION Styling File             */
+/*===============================================*/
+/*This styling file applies specifically to every
+SECTION page. */
+
+
+.jumbotron {
+    position          : relative;
+    margin-bottom     : 0px;
+}
+
+.header-topic-index {
+    background-color: rgb(240, 240, 240);
+    text-align      : center;
+    padding-top     : 85px;
+}
+.header-topic-index h2 {
+    padding-top: 50px;
+}
+.header-topic-index .topic-img {
+    width           : 20%;
+    height          : 20%;
+}
+.topic-logo {
+    width           : 250px;
+    height          : 250px;
+    border-radius   : 100%;
+    border          : 1px solid black;
+    text-align      : center;
+    vertical-align  : center;
+    color           : rgb(240, 240, 240);
+    background-color: rgb(50, 50, 50);
+    box-shadow      : 10px 10px 10px 0 rgba(0, 0, 0, 0.2), 
+                     -10px -10px 10px 0 rgba(0, 0, 0, 0.20);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : linear;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s width, 0.2s height, 0.2s margin-bottom, 0.2s box-shadow;
+}
+.topic-logo:hover {
+    box-shadow      : 3px 3px 5px 0 rgba(0, 0, 0, 0.2), 
+                     -3px -3px 5px 0 rgba(0, 0, 0, 0.20);
+    width           : 243px;
+    height          : 243px;
+    margin-bottom   : 7px;
+}
+.topic-logo-img {
+    width           : 40%;
+    padding-bottom  : 15px;
+    /*height        : 80&;*/
+}
+.header-topic-index hr {
+    height          : 1px;
+    border          : 0;
+    border-top      : 2px solid black;
+    margin          : 30px 7% 0px 7%;
+}
+
+
+
+
+
+
+/*Entire Section Content Area*/
+.topic-content {
+    text-align      : justify;
+    text-align      : left;
+    background-color: rgb(240, 240, 240);
+    font-family     : "verdana";
+    /*background-color: yellow;*/
+}
+.topic-content .container {
+    padding-left : 7%;
+    padding-right: 7%;
+}
+
+
+/*Individual Sub-section area*/
+.topic-content .row {
+    padding-bottom: 17px;
+}
+/*Sub-section Headers*/
+.topic-content h3{
+    font-size  : 20pt;
+    font-weight: bold;
+}
+/*Sub-section Paragraphs*/
+.topic-content p,
+.topic-content p+ul,    
+.topic-content p+ol{    /*note +*/
+    text-align      : justify;
+    text-justify    : block;
+    /*background-color: red;*/
+    font-size       : 16pt;
+    line-height     : 35px;
+        border: 2 solid black;
+}
+/*List-items*/
+.topic-content ul li{
+    padding-bottom: 5px;
+}
+
+
+
+
+/*Image Outline Box - Including description*/
+.content-img {
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 2px;
+    padding: 15px;
+    margin: 0px 0px 5px 20px;
+    text-justify: block;
+    text-align: center;
+    font-family: verdana;
+    font-size: 14px;
+    word-wrap: break-word;
+    box-shadow: 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  3px  3px rgba(0, 0, 0, .10), 
+            0  6px  6px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : ease-in;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s width, 0.2s height, 0.2s box-shadow;
+}
+.content-img:hover {
+    box-shadow: 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10), 
+            0 24px 24px rgba(0, 0, 0, .12), 
+            0 36px 36px rgba(0, 0, 0, .10);
+}
+/*Image Itself*/
+.content-img img {
+    margin-bottom: 10px;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 
+            0  1px  1px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  4px  4px rgba(0, 0, 0, .10), 
+            0  8px  8px rgba(0, 0, 0, .10);
+}
+/*Image Modal*/
+.modal-body {
+    padding     : 15px;
+    margin      : 10px 0px 5px 20px;
+    text-justify: block;
+    text-align  : center;
+    font-family : verdana;
+    font-size   : 16px;
+    word-wrap   : inherit;
+}
+.modal-body img {
+    margin-bottom: 20px;
+    border       : 1px solid rgb(100, 100, 100);
+    box-shadow: 
+        0  1px  1px rgba(0, 0, 0, .10), 
+        0  2px  2px rgba(0, 0, 0, .10), 
+        0  2px  2px rgba(0, 0, 0, .10), 
+        0  4px  4px rgba(0, 0, 0, .10), 
+        0  8px  8px rgba(0, 0, 0, .10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Code Snippet Box - Including description*/
+.code-container {
+    text-align     : center;
+    padding-bottom : 15px;
+    font-family    : verdana;
+    font-size      : 14px;
+    box-shadow: 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  3px  3px rgba(0, 0, 0, .10), 
+            0  6px  6px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10);
+    margin-top  : 10px;
+    margin-bottom  : 25px;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : ease-in;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s width, 0.2s height, 0.2s box-shadow;
+}
+.code-container:hover {
+    box-shadow: 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10), 
+            0 24px 24px rgba(0, 0, 0, .12), 
+            0 36px 36px rgba(0, 0, 0, .10);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Reading Progress Bar*/
+.KW_progressContainer {
+    left            : 0;
+    width           : 100%;
+    height          : 0.6em;
+    margin-bottom   : 0px;
+    position        : fixed;
+    bottom          : 0px;
+    overflow        : hidden;
+    background-color: transparent;
+    content         : "";
+    display         : table;
+    table-layout    : fixed;
+}
+.KW_progressBar {
+    width             : 0%;
+    float             : left;
+    height            : 100%;
+    z-index           : 99;
+    max-width         : 100%;
+    background-color  : orange;
+    -webkit-transition: width .4s ease;
+    -o-transition     : width .4s ease;
+    transition: width .3s ease, height 0.6s ease-out;
+}
+
+
+

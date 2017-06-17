@@ -1,0 +1,49 @@
+/*===============================================*/
+/*               GLOBAL Styling File             */
+/*===============================================*/
+/*This styling file applies to the GLOBAL/entire site
+and is included in every page*/
+
+
+
+
+
+
+/*======================================*/
+/*=========       GLOBAL       =========*/
+/*======================================*/
+body {
+    background-color                  : black;
+    opacity                           : 1;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : ease-in;
+    transition-delay                  : 0.5s;
+    transition                        : 3s opacity;
+}
+body.fade-out {
+    opacity                           : 0;
+    transition                        : none;
+}
+
+
+
+
+
+
+
+/*======================================*/
+/*=========       FOOTER       =========*/
+/*======================================*/
+.footer {
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    height: 100px;
+    color: rgb(150, 150, 150);
+    /*border: 1px dashed black;*/
+}
+.footer .container {
+    padding: 30px 20px 20px 20px;
+}
+
+
+

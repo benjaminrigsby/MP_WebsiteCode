@@ -1,0 +1,247 @@
+<!-- =======================================-->
+<!-- =======================================-->
+<!--              MechPLUS.org              -->
+<!--             Ismet Handzic              -->
+<!--                  2017                  -->
+<!--             Version: 0.02              -->
+<!-- =======================================-->
+<!-- =======================================-->
+
+<!--
+  _    _          _____  _______     __
+ | |  | |   /\   |  __ \|  __ \ \   / /
+ | |__| |  /  \  | |__) | |__) \ \_/ / 
+ |  __  | / /\ \ |  ___/|  ___/ \   /  
+ | |  | |/ ____ \| |    | |      | |   
+ |_|  |_/_/    \_\_|    |_|      |_|   
+  _      ______          _____  _   _ _____ _   _  _____ _ 
+ | |    |  ____|   /\   |  __ \| \ | |_   _| \ | |/ ____| |
+ | |    | |__     /  \  | |__) |  \| | | | |  \| | |  __| |
+ | |    |  __|   / /\ \ |  _  /| . ` | | | | . ` | | |_ | |
+ | |____| |____ / ____ \| | \ \| |\  |_| |_| |\  | |__| |_|
+ |______|______/_/    \_\_|  \_\_| \_|_____|_| \_|\_____(_)                                                                          
+-->                                                                                          
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!--===============  LINK FONT FILES ====================-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+
+        <!--=============  LINKING STYLE (CSS) FILES ===============-->
+        <!-- Online Bootstrap CSS Library-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Custom CSS Style - Navigation for Site-->
+        <link rel="stylesheet" type="text/css" href="css/styles-nav.css">
+
+         <!-- Custom CSS Style - Global for Site-->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+
+
+        <!--=============  LINKING BEHAVIOR (JS) FILES ===============-->
+        <!-- JQuery Javascript Library-->
+        <script src  = "https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- JQuery-UI Javascript Library-->
+        <script src  = "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Javascript Library-->
+        <script src  = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!--Link Jquery Easing Library-->
+        <script src  = "js/jquery.easing.js"></script>
+
+         <!-- Load the Navigation Element -->
+         <!-- Note: Only works with local or remote server!-->
+         <script> $(function(){$("#includedNavigation").load("html/nav.html"); }); </script> 
+
+        <!-- Custom Javascript Behavior - Golbal for Site -->
+        <script type = "text/javascript" src="js/behavior.js"></script>
+
+
+
+        <!--=============  META DATA FOR WEBSITE  ===============-->
+        <!-- Document character encoding - universal characters-->
+        <meta charset="utf-8">
+
+        <!-- Author and Description-->
+        <meta name = "author" content="Ismet Handzic, Benjamin Rigsby">
+
+        <!--Website Icon (Has to be .png format and 32px by 32px)-->
+        <link rel="shortcut icon" href="img/img-website-icon.png" type="image/x-icon">  
+
+        <!--Type of Site-->
+        <meta name="Subject" content="education" >
+
+        <!-- For FACEBOOK posts - Image, Link, and description -->
+        <meta property = "og:title"         content="MechPLUS.org">
+        <meta property = "og:description"   content="Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively.">
+        <meta property = "og:type"          content="website">
+        <meta property = "og:url"           content="http://mechplus.org/">
+        <meta property = "og:image"         content="img/logo3.png">
+        
+        <!-- For TWITTER posts - Image, Link, and description -->
+        <meta name = "twitter:title"        content="MechPLUS.org">
+        <meta name = "twitter:description"  content="Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively.">
+        <meta name = "twitter:card"         content="img/logo3.png">
+        
+
+
+        <!-- ================ CUSTOM STYLES, BEHAVIORS, AND META  ============-->
+        <!-- Title - Front Page--> 
+        <title>MechPLUS.org</title>
+
+        <!-- Custom CSS Style - Front Page -->
+        <link rel="stylesheet" type="text/css" href="css/styles-front.css">
+
+        <!-- Custom Javascript Behavior - Front Page -->
+        <script type = "text/javascript" src="js/behavior-front.js"></script>
+
+        <!-- Meta Description - Front Page -->
+        <meta name = "description" content="Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively.">
+    </head>
+
+
+
+
+    <body>
+        <!--Used to fade front page in-->
+        <script>document.body.className += 'fade-out';</script>
+
+        <!--=======================================================-->
+        <!--                  Navigation Bar                       -->
+        <!--=======================================================-->
+        <!-- Inject Navbar code here - Works only with local or remote server-->
+        <!--<nav id="includedNavigation" class = "navbar navbar-default navbar-fixed-top " role = "navigation"></nav>-->
+        <nav class = "navbar navbar-default navbar-fixed-top " role = "navigation">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle" 
+                    data-toggle = "collapse" data-target = "#example-navbar-collapse">
+                    <span class = "sr-only">Toggle navigation</span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                <a class = "navbar-brand" href = "index.html">
+                    <img id="icon2" src="img/img-menu-logo.png" alt="Logo" style="height:20px;">
+                </a>
+            </div>
+            <div class = "collapse navbar-collapse navbar-left" id = "example-navbar-collapse">
+                <ul class = "nav navbar-nav">
+                     <li class = "dropdown">
+                        <a href = "#" id="dropdown-main" class = "dropdown-toggle" data-toggle = "dropdown">
+                            <strong>TOPICS</strong> 
+                            <b class = "caret"></b>  
+                        </a>
+                        <ul class = "dropdown-menu">
+                            <li><a href = "topics/matlab/topic-matlab.html">MATLAB</a></li>
+                            <li><a href = "#">Python</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!--=======================================================-->
+        <!--                  Header - Front                     -->
+        <!--=======================================================-->
+        <div class="jumbotron header">
+            <div class="container">
+                <img id="header-logo" src="img/img-front-header-logo.png" alt="mechPlus-logo">
+                 <h2 id="subtitle1">Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively</h2>
+            </div>
+        </div>
+
+
+
+        <!--=======================================================-->
+        <!--                  Mission - Front                      -->
+        <!--=======================================================-->
+        <div class="mission">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Our mission is to provide mechanical engineers who are in training and in practice with <strong>free and practical tools, theory, and career tips</strong>, presented in a way that is clear, concise, and usable. </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--=======================================================-->
+        <!--             topic Selection - Front                  -->
+        <!--=======================================================-->
+        <div class="topics">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                         <h2 id="topicsSelectTitle">Please select your topic of interest:</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                        <a class="topic-link" href="topics/matlab/topic-matlab.html">
+                            <button type="button" class="btn btn-default btn-circle btn-xl topic-button" id="matlab-topic" >
+                                <img class="topic-img" src="img/img-front-topic-icon-matlab.png" alt="MATLAB">
+                                <p class="topic-label">Learn the programming</br>language for technical</br>computing.</p>
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                        <a class="topic-link" href="#">
+                            <button type="button" class="btn btn-default btn-circle btn-xl topic-button" id="python-topic">
+                                <img class="topic-img" src="img/img-front-topic-icon-python.png" alt="PYTHON">
+                                <p class="topic-label">A free and powerful</br>programming language</br>for technical problems.</p>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+        <!--=======================================================-->
+        <!--                         Footer                        -->
+        <!--=======================================================-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                         <p>Handzic and Rigsby &copy2017</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                         <strong><p id='countdown-timer'></p></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Scroll up button-->
+        <img id="scroll-up-button" src="img/img-schroll-up-icon.png" alt="UP!">
+
+
+
+    </body>
+</html>

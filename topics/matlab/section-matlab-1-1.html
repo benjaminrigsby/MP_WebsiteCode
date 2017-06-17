@@ -1,0 +1,488 @@
+<!--MATLAB - SECTION 1.1-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--===============  LINK FONT FILES ====================-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+
+
+        <!--=============  LINKING STYLE (CSS) FILES ===============-->
+        <!-- Online Bootstrap CSS Library-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Custom CSS Style - Navigation for Site-->
+        <link rel="stylesheet" type="text/css" href="../../css/styles-nav.css">
+
+         <!-- Custom CSS Style - Global for Site-->
+        <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+
+
+
+        <!--=============  LINKING BEHAVIOR (JS) FILES ===============-->
+        <!-- JQuery Javascript Library-->
+        <script src  = "https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+        <!-- JQuery-UI Javascript Library-->
+        <script src  = "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap Javascript Library-->
+        <script src  = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!--Link Jquery Easing Library-->
+        <script src  = "../../js/jquery.easing.js"></script>
+
+         <!-- Load the Navigation Element -->
+         <!-- Note: Only works with local or remote server!-->
+         <script> $(function(){$("#includedNavigation").load("../../html/nav.html"); }); </script> 
+
+        <!-- Custom Javascript Behavior - Golbal for Site -->
+        <script type = "text/javascript" src="../../js/behavior.js"></script>
+
+
+
+        <!--=============  META DATA FOR WEBSITE  ===============-->
+        <!-- Document character encoding - universal characters-->
+        <meta charset="utf-8">
+
+        <!-- Author and Description-->
+        <meta name = "author" content="Ismet Handzic, Benjamin Rigsby">
+
+        <!--Website Icon (Has to be .png format and 32px by 32px)-->
+        <link rel="shortcut icon" href="../../img/img-website-icon.png" type="image/x-icon">  
+
+        <!--Type of Site-->
+        <meta name="Subject" content="education" >
+
+        <!-- For FACEBOOK posts - Image, Link, and description -->
+        <meta property = "og:title"         content="MechPLUS.org - MATLAB">
+        <meta property = "og:description"   content="Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively.">
+        <meta property = "og:type"          content="website">
+        <meta property = "og:url"           content="http://mechplus.org/">
+        <meta property = "og:image"         content="../../img/logo3.png">
+        
+        <!-- For TWITTER posts - Image, Link, and description -->
+        <meta name = "twitter:title"        content="MechPLUS.org">
+        <meta name = "twitter:description"  content="Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively.">
+        <meta name = "twitter:card"         content="../../img/logo3.png">
+        
+
+
+
+        <!--Code Highlighting / Presenting-->
+        <link href  = "../../css/prism-code-highlight-matlab.css" rel="stylesheet" />
+        <script src =  "../../js/prism-code-highlight-matlab.js"></script>
+        <link href  = "../../css/prism-code-highlight-linenumbers.css" rel="stylesheet" />
+        <script src =  "../../js/prism-code-highlight-linenumbers.js"></script>     
+
+
+
+        <!-- ================ CUSTOM STYLES, BEHAVIORS, AND META  ============-->
+        <!-- Title - Section Page--> 
+        <title>MechPLUS.org - MATLAB - Section 1.1. - Intro and Background</title>
+
+        <!-- Custom CSS Style - Section Page -->
+        <link rel="stylesheet" type="text/css" href="../../css/styles-section.css">
+
+        <!-- Custom Javascript Behavior - Section Page -->
+        <script type = "text/javascript" src="../../js/behavior-section.js"></script>
+
+        <!-- Meta Description - Section Page -->
+        <meta name = "description" content="Tools, Topics, and Tips for Mechanical Engineers Communicated Effectively.">
+    </head>
+
+
+    <body>
+        <!--=======================================================-->
+        <!--                  Navigation Bar                       -->
+        <!--=======================================================-->
+        <!-- Inject Navbar code here - Works only with local or remote server-->
+        <!--<nav id="includedNavigation" class = "navbar navbar-default navbar-fixed-top " role = "navigation"></nav>-->
+        <nav class = "navbar navbar-default navbar-fixed-top " role = "navigation">
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle" 
+                    data-toggle = "collapse" data-target = "#example-navbar-collapse">
+                    <span class = "sr-only">Toggle navigation</span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                <a class = "navbar-brand" href = "../../index.html">
+                    <img id="icon2" src="../../img/img-menu-logo.png" alt="Menu Logo" style="height:20px;">
+                </a>
+            </div>
+            <div class = "collapse navbar-collapse navbar-left" id = "example-navbar-collapse">
+                <ul class = "nav navbar-nav">
+                     <li class = "dropdown">
+                        <a href = "#" id="dropdown-main" class = "dropdown-toggle" data-toggle = "dropdown">
+                            <strong>TOPICS</strong> 
+                            <b class = "caret"></b>  
+                        </a>
+                        <ul class = "dropdown-menu">
+                            <li><a href = "topic-matlab.html">MATLAB</a></li>
+                            <li><a href = "#">Python</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <!--=======================================================-->
+        <!--                  Header - Section                     -->
+        <!--=======================================================-->
+        <div class="jumbotron header-topic-index">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <a href="topic-matlab.html">
+                            <button class="topic-logo">
+                                <img class="topic-logo-img" src="img-topic/img-topic-icon-matlab.png" alt="MATLAB">
+                            </button>
+                        </a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h2>MATLAB</h2>
+                        <h3>Section 1.1 - History and Intro</h3>
+                    </div>
+
+                </div>
+            </div>
+            <hr/>
+        </div>
+
+
+        
+        <!--=======================================================-->
+        <!--                 Main Content Section-->
+        <!--=======================================================-->
+        <div class="topic-content">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Summary (TL;DR)</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p>
+                            <ul>
+                                <li>MATLAB is made for scientists and engineers.</li>
+                                <li>MATLAB can do lots of things useful for mechanical engineers.</li>
+                                <li>A software licence is required to use MATLAB, however options are available.</li>
+                                <li>There are free alternatives to MATLAB that mimic MATLAB.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>What is MATLAB?</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <p>
+                            MATLAB is a <a href="https://en.wikipedia.org/wiki/High-level_programming_language" target="_blank">high-level</a> <a href="https://en.wikipedia.org/wiki/Interpreted_language" target="_blank">interpreted</a> <a href="https://en.wikipedia.org/wiki/Numerical_analysis" target="_blank">numerical analysis</a> programming language built for scientists and engineers in academia and industry. MATLAB is relatively user friendly and provides many out of the box tools and resources for math, controls, data analysis, data manipulation, data acquisition, and more (<a href="https://www.mathworks.com/products.html" target="_blank">See full list here</a>). 
+                        </p>
+                        <p>
+                            This software has built in functionalities like plotting and statistical 
+                            analysis that many other popular programming languages do not, which makes it attractive to engineers 
+                            who are more focused on the problem rather than the computer science happening behind the scenes. 
+                            For example, MATLAB ofers a "mean" function to compute the average of a set of data. The user can simply use this function
+                            without specifically adding and dividing individual numbers.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row topic-sub-title">
+                    <div class="col-md-12">
+                        <h3>What is MATLAB Practically Good For?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            <ul>
+                                <li>Data manipulation
+                                    <ul>
+                                        <li>Math operations, statistics, linear algebra, vector and matrix manipulation, optimization, and more...</li>
+                                    </ul>
+                                </li>
+                                <li>Data Presentation
+                                    <ul>
+                                        <li>Plotting/graphing (2D/3D), animation (2D/3D), graphical user interface (GUI) application, remote deployment, and more </li>
+                                    </ul>
+                                </li>
+                                <li>Hardware Communication and Control
+                                    <ul>
+                                        <li>Sensor reading, actuator control, signal processing, signal generation, and more </li>
+                                    </ul>
+                                </li>
+                                <li>Media Processing
+                                    <ul>
+                                        <li>Computer/Machine Vision, audio recording/playback, frequency analysis, and more </li>
+                                    </ul>
+                                </li>
+                                <li>And much much more...</li>
+                            </ul>
+                        </p>
+                        <p>While MATLAB is capable of all of these and more, this topic will only cover the essential utilitis, 
+                            while presenting practical examples. These essentials can be further used to figure out the more advanced utlities.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row topic-sub-title">
+                    <div class="col-md-12">
+                        <h3>How Can I Get MATLAB Onto My Computer?</h3>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-12">
+                        <p> 
+                            MATLAB is a is a proprietary language held by its parent company <a href="http://www.mathworks.com/" target="_blank">MathWorks</a>, which means you, your school, or your company needs 
+                            to pay for a license to use it.
+                        </p>
+                    </div>
+                 </div>
+
+
+
+
+
+
+
+                 <div class="row topic-sub-title">
+                    <div class="col-md-12">
+                        <h3>How Much Does MATLAB Cost?</h3>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-12">
+
+
+
+
+
+                        <!--Code Snippet Example-->
+                        <div class="code-container">
+                             <pre class="code language-matlab line-numbers">
+<code>n      = 20;       % number of points
+points = [random('unid', 100, n, 1), random('unid', 100, n, 1)];
+len    = zeros(1, n - 1);
+points = sortrows(points);
+
+plot(points(:,1),points(:,2));     %% Initial set of points
+for i = 1: n-1
+    len(i) = points(i + 1, 1) - points(i, 1);
+end
+</code></pre>
+                            <strong>Code Example #:</strong> Example Code Description Here
+                        </div>
+                        
+
+
+
+
+
+                        <!--Image Example with Modal-->
+                        <div class="pull-right content-img">
+                            <img src="../../img/img-website-icon.png" width="200" data-toggle="modal" data-target="#image1"/><br>
+                            <strong>Figure #:</strong> Image title title title <br> title title title
+                        </div>
+                        <div id="image1" class="modal fade" role="dialog">
+                            <div class="modal-dialog"><div class="modal-content"><div class="modal-body">
+                                <img src="../../img/img-website-icon.png" width="500"/><br>
+                                <strong>Figure #:</strong> Image title title title title title title
+                            </div></div></div>
+                        </div>
+
+
+
+
+
+
+                        <p> 
+                            As of 2017, an standard single commercial licence costs $2650, while an educational licence to students costs $625. However, there are alternatives that mimic MATLAB. <i>(See Section Below)</i>
+                            MATLAB is highly modular, meaning that various and specialized toolboxes that can be added to the core software.  While some toolboxes come standard with the 
+                            MATLAB package, many need to be purchased, ranging from $500 to $1000. A couple examples are the <a href="https://www.mathworks.com/products/aerotb.html" target="_blank">Aerospace Toolbox</a> for advanced aerospace analysis and development and
+                            the <a href="https://www.mathworks.com/products/instrument.html" target="_blank">Instrument Control Toolbox</a> to control and communicate with test and measurment instruments.
+                        </p>
+                    </div>
+                 </div>
+
+
+
+
+
+
+
+
+
+                <div class="row topic-sub-title">
+                    <div class="col-md-12">
+                        <h3>MATLAB Alternatives for FREE</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"> 
+                        <p>
+                            Not every engineer or engineering company is able to afford a software licence to use MATLAB. 
+                            The list below shows only the most popular numerical analysis software alternatives to MATLAB.  
+                            In most cases these alternatives offer identical commands and syntax/code structure.
+                            A full list of all alternatives can be <a href="https://en.wikipedia.org/wiki/List_of_numerical_analysis_software" target="_blank">found here</a>, 
+                            while a comparison between all of them can be <a href="https://en.wikipedia.org/wiki/Comparison_of_numerical_analysis_software" target="_blank">found here</a>.
+                        </p>
+                        <ol>
+                            <li><a href="https://www.gnu.org/software/octave/" target="_blank">GNU Octave</a></li>
+                            <li><a href="http://www.scilab.org/" target="_blank">SciLab</a></li>
+                            <li><a href="http://freemat.sourceforge.net/" target="_blank">FreeMat</a></li>
+                        </ol>
+                        <p>
+                            Note that a lot of functions and problem solving abilities that are available to MATLAB can be accomplished with other
+                            high-level programming languages such as <a href="https://www.python.org/" target="_blank">Python programming language</a>, however do usually use a different syntax/code while also needing some
+                            extra setup and understanding.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row topic-sub-title">
+                    <div class="col-md-12">
+                        <h3>Finding More Information and Help on MATLAB</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                            Complete documentation and examples on MATLAB commands can be found on <a href="https://www.mathworks.com/help/matlab/" target="_blank">MathWorks.com</a>.
+                            A good and complete MATLAB overview can be viewed on <a href="https://en.wikipedia.org/wiki/MATLAB" target="_blank">Wikipedia</a>.
+                            Free MATLAB examples and tutorials are found on <a href="https://www.youtube.com/user/MATLAB" target="_blank">YouTube</a>. Also, if you are curious
+                            you can subscribe to MATLAB activity updates on 
+                            <a href="https://twitter.com/MATLAB?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Twitter</a> and 
+                            <a href="https://www.facebook.com/MATLAB/" target="_blank">Facebook</a>.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+        <!--=======================================================-->
+        <!--                         Footer                        -->
+        <!--=======================================================-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                         <p>Handzic and Rigsby &copy2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Progress Bar-->
+        <div class="KW_progressContainer">
+            <div class="KW_progressBar">
+            </div>
+	    </div>
+        
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!--========================================================-->
+<!--                   Snippets for Use                     -->
+<!--========================================================-->
+<!-- Images -->
+<!--NOTE: Place div right before paragraphs <p> -->
+<!--
+<div class="pull-right content-img">
+    <img src="img-topic/filename.png" width="200"/><br>
+    <strong>Figure #:</strong> Image Title
+</div>
+-->
+
+
+
+
+<!--Images with Modal Popout-->
+<!--NOTE: the 'image-1', this is a unique ID for the current page, unique to each picture-->
+<!--
+    <div class="pull-right content-img">
+    <img src="img-topic/filename.png" width="200" data-toggle="modal" data-target="#image-1"/><br>
+    <strong>Figure #:</strong> Image title title title <br> title title title
+</div>
+<div id="image-1" class="modal fade" role="dialog">
+    <div class="modal-dialog"><div class="modal-content"><div class="modal-body">
+        <img src="../../img/img-website-icon.png" width="500"/><br>
+        <strong>Figure #:</strong> Image title title title title title title
+    </div></div></div>
+</div>
+-->
+
+
+
+
+
+<!-- Code -->
+<!--NOTE: Leading white spaces matter, all code must be between <code></code>, NO EXTRA LEADING SPACES -->
+<!--
+
+<div class="code-container">
+    <pre class="language-matlab line-numbers"><code> ***PASTE CODE HERE*** </code></pre>
+    <strong>Code Example #:</strong> Example Code Description Here
+</div>
+
+-->

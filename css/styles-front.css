@@ -1,0 +1,174 @@
+/*===============================================*/
+/*            FRONT Page Styling File            */
+/*===============================================*/
+/*This styling file applies specifically to the 
+FRONT page of the website*/
+
+
+
+
+
+/*======================================*/
+/*=========       HEADER       =========*/
+/*======================================*/
+.header {
+    text-align     : center;
+    height         : 650px;
+    padding-top    : 125px;
+    background     : rgb(50, 50, 50) url("../img/img-front-header-background.png") no-repeat center center;
+    background-size: cover;
+    color          : rgb(240, 240, 240);
+}
+.jumbotron {
+    position          : relative;
+    z-index           : 2;
+    -moz-box-shadow   : 0px 12px 15px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.2);
+        box-shadow: 
+                0 4px 4px rgba(0, 0, 0, .1), 
+                0 8px 8px rgba(0, 0, 0, .1), 
+                0 16px 16px rgba(0, 0, 0, .1), 
+                0 32px 32px rgba(0, 0, 0, .15), 
+                0 64px 64px rgba(0, 0, 0, .15);
+    margin-bottom     : 0px;
+}
+#header-logo {
+    padding-bottom    : 20px;
+    height            : 290px;
+    opacity           :  1;
+
+    -webkit-transition-timing-function: linear;
+    transition-timing-function        : linear;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s height;
+}
+#header-logo:hover {
+    height   : 200px;
+    opacity  : 0.5;
+}
+#countdown-timer {
+    font-size: 20px;
+}
+
+
+
+
+
+
+/*======================================*/
+/*=========       MISSION      =========*/
+/*======================================*/
+.mission {
+   text-align        : center;
+   background-color  : rgb(240, 240, 240);
+   /*border          : 1px dashed black;*/
+}
+.mission .container {
+   padding           : 40px 20px 20px 20px;
+}
+.mission h3 {
+    color            : rgb(50, 50, 50);
+    line-height      : 35px;
+}
+
+
+
+
+
+
+
+
+
+/*======================================*/
+/*=========      topicS       =========*/
+/*======================================*/
+.topics {
+    display: block;
+    background-color: rgb(240, 240, 240);
+    /*background-color: rgb(255, 127, 42);*/
+    color: rgb(50, 50, 50);
+    /*height: 600px;*/
+    /*border: 1px dashed black;*/
+    text-align: center;
+    /*overflow: auto;*/
+}
+.topics .container {
+    padding: 20px 20px 20px 20px;
+}
+.topics h2 {
+    text-align: center;
+}
+.topics #topicsSelectTitle {
+    padding-bottom: 25px;
+}
+.topics .col-md-6 {
+    /*border: 1px dashed black;*/
+    padding: 20px 0px 20px 0px;
+}
+
+.topic-button {
+    width                             : 350px;
+    height                            : 350px;
+    border-radius                     : 100%;
+    border                            : 1px solid black;
+    text-align                        : center;
+    color                             : rgb(240, 240, 240);
+    background-color                  : rgb(50, 50, 50);
+    box-shadow                        : 10px 10px 10px 0 rgba(0, 0, 0, 0.2), 
+                                        -10px -10px 10px 0 rgba(0, 0, 0, 0.20);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : ease-in;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s width, 0.2s height, 0.2s margin-bottom, 0.2s box-shadow;
+}
+.topic-button:hover {
+    background-color: rgb(50, 50, 50);
+    color           : rgb(240, 240, 240);
+    box-shadow      : 3px 3px 5px 0 rgba(0, 0, 0, 0.2), -3px -3px 5px 0 rgba(0, 0, 0, 0.20);
+    width           : 343px;
+    height          : 343px;
+    margin-bottom   : 7px;
+}
+.topic-button:active, .topic-button:focus {
+    background-color: rgb(50, 50, 50);
+    color: rgb(240, 240, 240);
+    border-color: rgb(50, 50, 50);
+}
+
+.topic-img {
+    height: 130px;
+    padding-bottom: 20px;
+}
+.topic-label {
+    font-size: 17px;
+    font-family: verdana;
+}
+#python-topic {
+    opacity: 0.25;
+}
+
+
+
+/*Scroll up button*/
+#scroll-up-button {
+    position  : fixed;
+    width     : 5px;
+    opacity   : 0.50;
+    text-align: center;
+    bottom    : 40px; /* Place the button at the bottom of the page */
+    right     : -30px; /* Place the button 30px from the right */
+    z-index   : 99; /* Make sure it does not overlap */
+    cursor    : pointer; /* Add a mouse pointer on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
