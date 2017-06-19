@@ -47,6 +47,8 @@ NAVIGATION BAR page of the website*/
   color: rgb(240, 240, 240);
   background-color: rgb(255, 205, 0);
 }
+
+
 .navbar .navbar-toggle {
   border-color: rgb(240, 240, 240);
 }
@@ -54,6 +56,9 @@ NAVIGATION BAR page of the website*/
 .navbar .navbar-toggle:focus {
   background-color: rgb(240, 240, 240);
 }
+
+
+
 .navbar .navbar-toggle .navbar-toggler-icon {
   color: rgb(240, 240, 240);
 }
@@ -67,9 +72,16 @@ NAVIGATION BAR page of the website*/
 .navbar .navbar-link:hover {
   color: rgb(240, 240, 240);
 }
+
+
+
 #dropdown-main {
     color: rgb(255, 205, 0);
 }
+
+
+
+
 @media (max-width: 767px) {
   .navbar .navbar-nav .open .dropdown-menu .dropdown-item {
     color: red;

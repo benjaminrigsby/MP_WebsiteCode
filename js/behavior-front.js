@@ -26,20 +26,22 @@ $(function(){
         //Animate topic Buttons row moving up
         var $c1 = $('.topic-button');                  //shortcut definition
         $c1.css("position", "relative");                //temporarly set relative position
-        $c1.css('top', "+=100px");                     //quickly move down
-        var animateChange = "-=100px";
+        $c1.css('top', "+=150px");                     //quickly move down
+        var animateChange = "-=150px";
+
         $c1.css('opacity', "0");                        //quickly make invisible
+
 
         var scrolledUp = true;      // Controls hide and show of scroll up button
 
         $(window).scroll(function () {
 
-            if ($(this).scrollTop() > 235) {            //if past certain point on page
+            if ($(this).scrollTop() > 245) {            //if past certain point on page
                 if ($c1.hasClass('visible') == false) { //if it is NOT visible
                     $c1.animate({                       //animate up
-                        top:     animateChange,
-                        opacity: 0.8
-                    }, 1500, "easeOutQuart", function () {
+                        top    : "-=150px",
+                        opacity: 1.0,
+                    }, 1500, "easeOutQuint", function () {
                         $c1.addClass('visible');        //add "visible" when done
                         $c1.css("position", "static");  //restore static position
                     });
@@ -57,7 +59,7 @@ $(function(){
                 $("#scroll-up-button").animate({
                     width     : "70px", 
                     right     : "50px",
-                    opacity   : "0.70"
+                    opacity   : "0.75"
                 }, 500, "easeOutBounce" , function() {
                     scrolledUp = false;
                 });
@@ -86,6 +88,16 @@ $(function(){
             scrollTop: 0,
         }, 500, "easeOutQuint")
     })
+
+    // When user hovers over button it becomes solid
+    $('#scroll-up-button').hover(
+        function(){
+                $(this).css("opacity", "1.0")
+        }, function() {
+                $(this).css("opacity", "0.5")
+        }
+    
+    )
 
 
 

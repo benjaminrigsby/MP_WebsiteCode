@@ -9,21 +9,7 @@ and is included in every page*/
 
 
 
-/*======================================*/
-/*=========       GLOBAL       =========*/
-/*======================================*/
-body {
-    background-color                  : black;
-    opacity                           : 1;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function        : ease-in;
-    transition-delay                  : 0.5s;
-    transition                        : 3s opacity;
-}
-body.fade-out {
-    opacity                           : 0;
-    transition                        : none;
-}
+
 
 
 

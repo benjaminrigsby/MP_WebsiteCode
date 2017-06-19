@@ -22,11 +22,17 @@ SECTION page. */
     width           : 20%;
     height          : 20%;
 }
+.header-topic-index hr {
+    height          : 1px;
+    border          : 0;
+    border-top      : 2px solid black;
+    margin          : 30px 7% 0px 7%;
+}
 .topic-logo {
     width           : 250px;
     height          : 250px;
-    border-radius   : 100%;
-    border          : 1px solid black;
+    border-radius   : 5%;
+    border          : 0.2px solid black;
     text-align      : center;
     vertical-align  : center;
     color           : rgb(240, 240, 240);
@@ -36,7 +42,7 @@ SECTION page. */
     -webkit-transition-timing-function: ease-in;
     transition-timing-function        : linear;
     transition-delay                  : 0.0s;
-    transition                        : 0.2s width, 0.2s height, 0.2s margin-bottom, 0.2s box-shadow;
+    transition                        : 0.2s width, 0.2s height, 0.2s margin-bottom, 0.2s box-shadow, 0.2s background-color;
 }
 .topic-logo:hover {
     box-shadow      : 3px 3px 5px 0 rgba(0, 0, 0, 0.2), 
@@ -44,18 +50,20 @@ SECTION page. */
     width           : 243px;
     height          : 243px;
     margin-bottom   : 7px;
+    background-color: rgb(30, 30, 30)
+}
+.topic-logo:active, 
+.topic-logo:focus,
+.topic-logo:link {
+    background-color: rgb(50, 50, 50);
+    color           : rgb(240, 240, 240);
+    outline         : none;
 }
 .topic-logo-img {
     width           : 40%;
     padding-bottom  : 15px;
-    /*height        : 80&;*/
 }
-.header-topic-index hr {
-    height          : 1px;
-    border          : 0;
-    border-top      : 2px solid black;
-    margin          : 30px 7% 0px 7%;
-}
+
 
 
 
@@ -256,8 +264,7 @@ SECTION page. */
     height          : 100px;
     padding-top     : 25px;
     margin-bottom   : 10px;
-    background-color: rgb(240, 240, 240);
-    background-color: rgb(255, 205, 0);
+    background-color: rgb(255, 205, 70);
     box-shadow: 
             0  2px  2px rgba(0, 0, 0, .10), 
             0  2px  2px rgba(0, 0, 0, .10), 
@@ -267,7 +274,7 @@ SECTION page. */
     -webkit-transition-timing-function: ease-in;
     transition-timing-function        : ease-in;
     transition-delay                  : 0.0s;
-    transition                        : 0.2s box-shadow;
+    transition                        : 0.2s box-shadow, 0.2s background-color;
 }
 .download-button:hover {
     box-shadow: 
@@ -276,6 +283,7 @@ SECTION page. */
             0 10px 10px rgba(0, 0, 0, .10), 
             0 24px 24px rgba(0, 0, 0, .12), 
             0 36px 36px rgba(0, 0, 0, .10);
+    background-color: rgb(255, 225, 90);
 }
 .download-button:active {
     box-shadow: 
@@ -284,6 +292,7 @@ SECTION page. */
         0  3px  3px rgba(0, 0, 0, .10), 
         0  6px  6px rgba(0, 0, 0, .10), 
         0 10px 10px rgba(0, 0, 0, .10);
+    background-color: rgb(230, 190, 0);
 }
 .download-button-icon {
     height      :  80%;
@@ -293,6 +302,84 @@ SECTION page. */
 
 
 
+
+
+
+
+
+
+/*Imediate Navigation Buttons*/
+.navImediate {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(240, 240, 240);
+
+}
+.navImediate a:hover {
+    text-decoration: none;
+}
+.navImediate hr {
+    height          : 1px;
+    border-top      : 2px solid black;
+    margin          : 30px 7% 0px 7%;
+    padding-bottom  : 20px;
+}
+.previousButton {
+    float: left;
+}
+.nextButton {
+    float: right;
+}
+.previousButton,
+.nextButton {
+    width         : 30%;
+    height        : 50px;
+    padding       : 10px 0px 10px 10px;
+    border        : 0.5px solid rgb(120, 120, 120);
+    border-radius : 100px;
+    color         : black;
+    text-align    : center;
+    text-justify  : block;
+    vertical-align: middle;
+    font-family   : verdana;
+    font-size     : 18px;
+    font-weight: bold;
+    background-color: rgb(255, 205, 50);
+    box-shadow: 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  3px  3px rgba(0, 0, 0, .10), 
+            0  6px  6px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : ease-in;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s box-shadow, 0.2s background-color;
+}
+.previousButton:hover,
+.nextButton:hover {
+    box-shadow: 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10), 
+            0 24px 24px rgba(0, 0, 0, .12), 
+            0 36px 36px rgba(0, 0, 0, .10);
+    background-color: rgb(255, 225, 90);
+}
+.previousButton:active,
+.nextButton:active {
+    box-shadow: 
+        0  2px  2px rgba(0, 0, 0, .10), 
+        0  2px  2px rgba(0, 0, 0, .10), 
+        0  3px  3px rgba(0, 0, 0, .10), 
+        0  6px  6px rgba(0, 0, 0, .10), 
+        0 10px 10px rgba(0, 0, 0, .10);
+    background-color: rgb(230, 190, 0);
+}
+.nextButtonIcon {
+    height: 80%;
+    padding-left: 5px;
+}
 
 
 
@@ -309,7 +396,7 @@ SECTION page. */
 .KW_progressContainer {
     left            : 0;
     width           : 100%;
-    height          : 0.6em;
+    height          : 0.5em;
     margin-bottom   : 0px;
     position        : fixed;
     bottom          : 0px;
