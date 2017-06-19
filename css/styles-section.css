@@ -104,17 +104,28 @@ SECTION page. */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*Image Outline Box - Including description*/
 .content-img {
-    border: 1px solid rgb(100, 100, 100);
+    border       : 1px solid rgb(100, 100, 100);
     border-radius: 2px;
-    padding: 15px;
-    margin: 0px 0px 5px 20px;
-    text-justify: block;
-    text-align: center;
-    font-family: verdana;
-    font-size: 14px;
-    word-wrap: break-word;
+    padding      : 15px;
+    margin       : 0px 0px 5px 20px;
+    text-justify : block;
+    text-align   : center;
+    font-family  : verdana;
+    font-size    : 14px;
+    word-wrap    : break-word;
     box-shadow: 
             0  2px  2px rgba(0, 0, 0, .10), 
             0  2px  2px rgba(0, 0, 0, .10), 
@@ -124,7 +135,7 @@ SECTION page. */
     -webkit-transition-timing-function: ease-in;
     transition-timing-function        : ease-in;
     transition-delay                  : 0.0s;
-    transition                        : 0.2s width, 0.2s height, 0.2s box-shadow;
+    transition                        : 0.2s box-shadow;
 }
 .content-img:hover {
     box-shadow: 
@@ -133,6 +144,14 @@ SECTION page. */
             0 10px 10px rgba(0, 0, 0, .10), 
             0 24px 24px rgba(0, 0, 0, .12), 
             0 36px 36px rgba(0, 0, 0, .10);
+}
+.content-img:active {
+    box-shadow: 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  3px  3px rgba(0, 0, 0, .10), 
+            0  6px  6px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10);
 }
 /*Image Itself*/
 .content-img img {
@@ -183,6 +202,8 @@ SECTION page. */
 .code-container {
     text-align     : center;
     padding-bottom : 15px;
+    margin-top   : 10px;
+    margin-bottom: 25px;
     font-family    : verdana;
     font-size      : 14px;
     box-shadow: 
@@ -191,12 +212,10 @@ SECTION page. */
             0  3px  3px rgba(0, 0, 0, .10), 
             0  6px  6px rgba(0, 0, 0, .10), 
             0 10px 10px rgba(0, 0, 0, .10);
-    margin-top  : 10px;
-    margin-bottom  : 25px;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function        : ease-in;
     transition-delay                  : 0.0s;
-    transition                        : 0.2s width, 0.2s height, 0.2s box-shadow;
+    transition                        : 0.2s box-shadow;
 }
 .code-container:hover {
     box-shadow: 
@@ -205,6 +224,70 @@ SECTION page. */
             0 10px 10px rgba(0, 0, 0, .10), 
             0 24px 24px rgba(0, 0, 0, .12), 
             0 36px 36px rgba(0, 0, 0, .10);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Download Button*/
+.download-link:hover, 
+.download-link:visited,
+.download-link:active,
+.download-link:link {
+    text-decoration: none;
+}
+.download-button {
+    border          : 0.5px solid rgb(100, 100, 100);
+    border-radius   : 5px;
+    color           : black;
+    text-align      : center;
+    text-justify    : block;
+    vertical-align  : middle;
+    font-family     : Times;
+    font-size       : 24px;
+    font-weight: bold;
+    height          : 100px;
+    padding-top     : 25px;
+    margin-bottom   : 10px;
+    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 205, 0);
+    box-shadow: 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  2px  2px rgba(0, 0, 0, .10), 
+            0  3px  3px rgba(0, 0, 0, .10), 
+            0  6px  6px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function        : ease-in;
+    transition-delay                  : 0.0s;
+    transition                        : 0.2s box-shadow;
+}
+.download-button:hover {
+    box-shadow: 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 8px   8px rgba(0, 0, 0, .10), 
+            0 10px 10px rgba(0, 0, 0, .10), 
+            0 24px 24px rgba(0, 0, 0, .12), 
+            0 36px 36px rgba(0, 0, 0, .10);
+}
+.download-button:active {
+    box-shadow: 
+        0  2px  2px rgba(0, 0, 0, .10), 
+        0  2px  2px rgba(0, 0, 0, .10), 
+        0  3px  3px rgba(0, 0, 0, .10), 
+        0  6px  6px rgba(0, 0, 0, .10), 
+        0 10px 10px rgba(0, 0, 0, .10);
+}
+.download-button-icon {
+    height      :  80%;
+    padding-bottom: 10px;
 }
 
 
